@@ -1,0 +1,6 @@
+main: group.bigman.plugin.Main
+name: BMG-PlockDeny
+version: 0.1
+author: Jamie Stivala
+description: Don't say the p-word, dumbass
+website: https://bigman.group/
