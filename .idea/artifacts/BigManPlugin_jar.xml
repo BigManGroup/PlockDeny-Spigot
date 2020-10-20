@@ -4,7 +4,7 @@
     <root id="archive" name="BigManPlugin.jar">
       <element id="module-output" name="BigManPlugin" />
       <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
-      <element id="file-copy" path="$PROJECT_DIR$/libs/spigot-api-1.12.2-R0.1-SNAPSHOT-shaded.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/spigot-api-1.16.3-R0.1-SNAPSHOT-shaded.jar" />
     </root>
   </artifact>
 </component>
