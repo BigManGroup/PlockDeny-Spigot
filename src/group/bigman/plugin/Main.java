@@ -14,10 +14,12 @@ import java.net.MalformedURLException;
 public class Main extends JavaPlugin implements Listener {
     RandomQuote randomQuote;
     RandomInsult randomInsult;
+    Interceptor interceptor;
 
     public Main() throws MalformedURLException {
-        randomQuote = new RandomQuote();
-        randomInsult = new RandomInsult();
+        this.randomQuote = new RandomQuote();
+        this.randomInsult = new RandomInsult();
+        this.interceptor = new Interceptor();
     }
 
     @Override
@@ -36,6 +38,8 @@ public class Main extends JavaPlugin implements Listener {
             String insult = this.randomInsult.getRandomInsult();
             event.setMessage(insult);
         }
+
+        event.setMessage(this.interceptor.changeBadWord(event.getMessage()));
     }
 
     @EventHandler
